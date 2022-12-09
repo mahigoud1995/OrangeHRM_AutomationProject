@@ -1,0 +1,20 @@
+ Volume in drive C is Windows
+ Volume Serial Number is 9048-2C9E
+
+ Directory of C:\My_Automation_Projects\OrangeHRM_Automation_Project
+
+09-12-2022  11:18 PM    <DIR>          .
+08-12-2022  05:41 PM    <DIR>          ..
+08-12-2022  12:22 AM             1,132 .classpath
+08-12-2022  02:21 AM                 9 .gitignore
+07-12-2022  11:16 PM               580 .project
+07-12-2022  11:16 PM    <DIR>          .settings
+09-12-2022  11:18 PM                 0 mahesh.txt
+09-12-2022  11:12 PM                 0 Notes.txt
+07-12-2022  11:18 PM             3,416 pom.xml
+09-12-2022  10:48 PM    <DIR>          ScreenShots
+07-12-2022  11:15 PM    <DIR>          src
+07-12-2022  11:16 PM    <DIR>          target
+09-12-2022  10:25 PM    <DIR>          test-output
+               6 File(s)          5,137 bytes
+               7 Dir(s)  447,489,695,744 bytes free

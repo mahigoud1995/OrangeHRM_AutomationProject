@@ -44,16 +44,8 @@ public class DashBoardPage extends TestBase{
 	
 	public void TestMainMenuOptions(String OptName) {
 		
-		List<WebElement> menuOptions = driver.findElements(By.xpath("//div[@class='oxd-sidepanel-body']/ul[@class='oxd-main-menu']/li"));
-	
-		for(WebElement  MenuOption : menuOptions) {
-			String optname = MenuOption.getText();
-			if(optname.equalsIgnoreCase(OptName)) {
-				MenuOption.click();
-				
-			}
-
-		}
+		driver.findElement(By.xpath("//a[@class='oxd-main-menu-item']//span[text()='"+OptName+"']")).click();
+		
 	}
 			
 

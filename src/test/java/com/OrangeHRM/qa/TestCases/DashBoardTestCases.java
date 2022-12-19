@@ -26,17 +26,17 @@ public class DashBoardTestCases extends TestBase {
 		Initialization();
 		lPage = new LoginPage();
 		dbPage = lPage.validateLogin(prop.getProperty("Username"), prop.getProperty("Password"));
+		adminPage = new AdminPage();
 	}
 		
 	@Test
-	public void veifyAdminLink() throws Exception {
+	public void veifyAdminLinkTest() throws Exception {
 		
-		adminPage = new AdminPage();
 		adminPage = dbPage.ValidateClickOnAdminLink();
 	
 	}
 		
-		
+	
 		
 	@AfterMethod
 	public void tearDown() throws InterruptedException {

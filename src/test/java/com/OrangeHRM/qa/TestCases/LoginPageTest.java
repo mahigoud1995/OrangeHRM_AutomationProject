@@ -31,6 +31,9 @@ public class LoginPageTest extends TestBase {
 	public void setup() throws Exception  {
 		Initialization();
 		loginPage = new LoginPage();
+		utils = new commonUtils();
+		fPWDPage = new ForgetPasswordPage();
+		aboutPage = new OrangeHRMAboutPage();
 	}
 	
 	
@@ -50,7 +53,7 @@ public class LoginPageTest extends TestBase {
 	@Test(priority = 2)
 	public void verifyLogin() throws Exception {
 		dbPage = loginPage.validateLogin(prop.getProperty("Username"), prop.getProperty("Password"));
-		utils = new commonUtils();
+		
 		utils.TakeScrennShot();
 		String dbPageName = dbPage.validateDashBoardText();
 		Assert.assertEquals(dbPageName, "Dashboard");
@@ -59,7 +62,7 @@ public class LoginPageTest extends TestBase {
 	
 	@Test(priority = 3)
 	public void verifyPorgetPasswordLink() throws Exception {
-		fPWDPage = new ForgetPasswordPage();
+		
 		fPWDPage = loginPage.validateForgetPWDLink();
 		String text = fPWDPage.validateResetPasswordText();
 		Assert.assertEquals(text, "Reset Password");
@@ -67,7 +70,7 @@ public class LoginPageTest extends TestBase {
 	
 	@Test(priority = 4)
 	public void verifyOrangeHRMAboutPage() throws Exception {
-		aboutPage = new OrangeHRMAboutPage();		
+				
 		aboutPage = loginPage.validateOrangeHRMIncLink();
 		String aboutPageTitle = aboutPage.validatePageTitle();
 		Thread.sleep(4000);

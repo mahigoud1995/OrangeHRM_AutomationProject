@@ -41,6 +41,16 @@ public class DashBoardPage extends TestBase{
 			
 	}
 	
+	public PIMPage validateClickOnPIMLink() throws Exception {
+		TestMainMenuOptions("PIM");
+		return new PIMPage();
+	}
+	
+	public LeavePage validateLeavesLink() {
+		TestMainMenuOptions("Leave");
+		return new LeavePage();
+	}
+	
 	
 	public void TestMainMenuOptions(String OptName) {
 		

@@ -6,6 +6,7 @@
 			<class name="com.OrangeHRM.qa.TestCases.LoginPageTest"></class>
 			<class name="com.OrangeHRM.qa.TestCases.DashBoardTestCases"></class>
 			<class name="com.OrangeHRM.qa.TestCases.ForgetPasswordPageTestCases"></class>
+			<class name="com.OrangeHRM.qa.TestCases.PIMPageTest"></class>
 		
 		</classes>
 	

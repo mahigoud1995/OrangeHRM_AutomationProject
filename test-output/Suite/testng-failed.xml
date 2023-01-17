@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.OrangeHRM.qa.TestCases.DashBoardTestCases">
+      <class name="com.OrangeHRM.qa.TestCases.PIMPageTest">
         <methods>
-          <include name="veifyAdminLinkTest"/>
-          <include name="openBrowser"/>
+          <include name="initialization"/>
+          <include name="createEmployee" invocation-numbers="1"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.OrangeHRM.qa.TestCases.DashBoardTestCases -->
+      </class> <!-- com.OrangeHRM.qa.TestCases.PIMPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

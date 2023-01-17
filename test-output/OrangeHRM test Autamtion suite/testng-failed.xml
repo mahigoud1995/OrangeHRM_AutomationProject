@@ -3,6 +3,15 @@
 <suite parallel="methods" name="Failed suite [OrangeHRM test Autamtion suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="methods" name="OrangeHRM Regressin Test(failed)">
     <classes>
+      <class name="com.OrangeHRM.qa.TestCases.LoginPageTest">
+        <methods>
+          <include name="verifyPorgetPasswordLink"/>
+          <include name="verifyLogin"/>
+          <include name="verifyOrangeHRMAboutPage"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.qa.TestCases.LoginPageTest -->
       <class name="com.OrangeHRM.qa.TestCases.DashBoardTestCases">
         <methods>
           <include name="veifyAdminLinkTest"/>
@@ -10,17 +19,13 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.OrangeHRM.qa.TestCases.DashBoardTestCases -->
-      <class name="com.OrangeHRM.qa.TestCases.LoginPageTest">
+      <class name="com.OrangeHRM.qa.TestCases.PIMPageTest">
         <methods>
-          <include name="verifyPorgetPasswordLink"/>
-          <include name="verifyLogin"/>
-          <include name="verifyOrangeHRMAboutPage"/>
-          <include name="setup"/>
-          <include name="verifyPageTitile"/>
-          <include name="verifyHRMLogo"/>
+          <include name="initialization"/>
+          <include name="createEmployee"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.OrangeHRM.qa.TestCases.LoginPageTest -->
+      </class> <!-- com.OrangeHRM.qa.TestCases.PIMPageTest -->
     </classes>
   </test> <!-- OrangeHRM Regressin Test(failed) -->
 </suite> <!-- Failed suite [OrangeHRM test Autamtion suite] -->

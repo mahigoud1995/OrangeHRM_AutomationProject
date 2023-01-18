@@ -1,5 +1,6 @@
 package com.OrangeHRM.qa.TestCases;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -26,17 +27,28 @@ public class DashBoardTestCases extends TestBase {
 		Initialization();
 		lPage = new LoginPage();
 		dbPage = lPage.validateLogin(prop.getProperty("Username"), prop.getProperty("Password"));
+		adminPage = new AdminPage();
 	}
 		
 	@Test
-	public void veifyAdminLink() throws Exception {
+	public void verifyDashboardText(){
+		String text = dbPage.validateDashBoardText();
+		Assert.assertEquals(text, "Dashboard");
+	}
+	
+	@Test
+	public void verifyHRmLogo() {
+		Assert.assertTrue(dbPage.validateHRMLogo());
+	}
+	
+	@Test
+	public void veifyAdminLinkTest() throws Exception {
 		
-		adminPage = new AdminPage();
 		adminPage = dbPage.ValidateClickOnAdminLink();
 	
 	}
 		
-		
+	
 		
 	@AfterMethod
 	public void tearDown() throws InterruptedException {
